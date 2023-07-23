@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
+import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
@@ -26,16 +27,15 @@ public class AppiumBaseTest {
 	
 	public static String Server_Address="127.0.0.1";
 	
-//	@BeforeClass
+	@BeforeClass
 	public void configurationForAppium() throws MalformedURLException
 	{
-//		DesiredCapabilities ds = new DesiredCapabilities();
-//		ds.setCapability("deviceName", "emulator-5554");
-//		ds.setCapability("platformName", "android");
-//		ds.setCapability("automationName", "UIAutomator2");
+		DesiredCapabilities caps = new DesiredCapabilities();	
 //		ds.setCapability("app", "//Users//vc//eclipse-workspace//Appium//src//test//java//resource//ApiDemos-debug.apk");
-//	
-		
+//		ds.setCapability("automationName", "UIAutomator2");
+//		ds.setCapability("platformName", "ANDROID");
+//		ds.setCapability("deviceName", "SibiEmulator");
+	
 //		service= new AppiumServiceBuilder()
 //				.usingDriverExecutable(new File("NodeExe_Path"))
 //				.withAppiumJS(new File("NodeJSPath"))
@@ -46,10 +46,19 @@ public class AppiumBaseTest {
 //		service.start();
 		
 		UiAutomator2Options options = new UiAutomator2Options();
-		options.setDeviceName("pixel");
-		options.setApp("//Users//vc//eclipse-workspace//Appium//src//test//java//resource//ApiDemos-debug.apk");
+		options.setDeviceName("SibiEmulator");
+		options.setApp("/Users/vc/Downloads/resources/ApiDemos-debug.apk");
 		
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);
 		
+//		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "ANDROID");
+//        caps.setCapability("MobileCapabilityType.VERSION", "14");
+//        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "SibiEmulator");
+// //       caps.setCapability(MobileCapabilityType.UDID, "0911b4aa");
+//        caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
+//        caps.setCapability(MobileCapabilityType.APP, "//Users//vc//eclipse-workspace//Appium//src//test//java//resource//ApiDemos-debug.apk⁩");
+////      caps.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
+//        URL url = new URL("http://127.0.0.1:4723/wd/hub");
+//		driver =new AndroidDriver(caps);
 	}
 }
