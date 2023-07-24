@@ -3,10 +3,14 @@ package com.appium;
 import java.io.IOException;
 import java.net.ServerSocket;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.Test;
+
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
+import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 
 
 public class AppiumServerJava {
@@ -68,5 +72,13 @@ public class AppiumServerJava {
 		} else {
 			System.out.println("Appium Server already running on Port - " + port);
 		}
+	}
+	
+	@Test
+	public void add()
+	{
+		WebDriver driver = (WebDriver) new ChromeDriverManager();
+		
+		driver.get("https://www.google.co.in/");
 	}
 }
