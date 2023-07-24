@@ -34,8 +34,7 @@ public class AppiumBaseTest {
 //		ds.setCapability("app", "//Users//vc//eclipse-workspace//Appium//src//test//java//resource//ApiDemos-debug.apk");
 //		ds.setCapability("automationName", "UIAutomator2");
 //		ds.setCapability("platformName", "ANDROID");
-//		ds.setCapability("deviceName", "SibiEmulator");
-	
+//		ds.setCapability("deviceName", "SibiEmulator");	
 //		service= new AppiumServiceBuilder()
 //				.usingDriverExecutable(new File("NodeExe_Path"))
 //				.withAppiumJS(new File("NodeJSPath"))
@@ -50,15 +49,5 @@ public class AppiumBaseTest {
 		options.setApp("/Users/vc/Downloads/resources/ApiDemos-debug.apk");
 		
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);
-		
-//		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "ANDROID");
-//        caps.setCapability("MobileCapabilityType.VERSION", "14");
-//        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "SibiEmulator");
-// //       caps.setCapability(MobileCapabilityType.UDID, "0911b4aa");
-//        caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
-//        caps.setCapability(MobileCapabilityType.APP, "//Users//vc//eclipse-workspace//Appium//src//test//java//resource//ApiDemos-debug.apk⁩");
-////      caps.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
-//        URL url = new URL("http://127.0.0.1:4723/wd/hub");
-//		driver =new AndroidDriver(caps);
 	}
 }

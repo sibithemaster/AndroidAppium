@@ -18,30 +18,7 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
 public class AppiumBasics extends AppiumBaseTest{ 
-
-	public AppiumDriverLocalService service;
-	
-	public static String NodeExe_Path ="//usr//local//bin//node";
-	
-	public static String NodeJSPath="//usr//local//lib//node_modules//appium//build//lib//main.js";
-	
-	public static String Server_Address="127.0.0.1";
-	
-//	@Test(priority = 1)
-//	public void serverStarting()
-//	{
-//		service= AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
-//				.usingDriverExecutable(new File("NodeExe_Path"))
-//				.withAppiumJS(new File("NodeJSPath"))
-//				.withIPAddress("Server_Address")
-//				.withArgument(GeneralServerFlag.BASEPATH, "/wd/hub")
-//				.usingPort(4723).withLogFile(new File("//Users//vc//Documents")));
-//		
-//		System.out.println("System starting with server ....");
-//		
-//		service.start();
-//	}
-		
+			
 	@Test
 	public void appiumTest() throws MalformedURLException
 	{	
