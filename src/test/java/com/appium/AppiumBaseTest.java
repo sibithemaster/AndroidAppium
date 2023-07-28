@@ -30,13 +30,16 @@ public class AppiumBaseTest {
 	public static String Server_Address="http://192.168.1.3:4723/";
 	
 	@BeforeClass
-	public void configurationForAppium() throws MalformedURLException
+	public void configurationForAppium() throws MalformedURLException, InterruptedException
 	{
-//		DesiredCapabilities caps = new DesiredCapabilities();	
-//		ds.setCapability("app", "//Users//vc//eclipse-workspace//Appium//src//test//java//resource//ApiDemos-debug.apk");
-//		ds.setCapability("automationName", "UIAutomator2");
+//		DesiredCapabilities ds = new DesiredCapabilities();	
+//		ds.setCapability("app", "/Users/vc/Downloads/resources/ApiDemos-debug.apk");
+//		ds.setCapability("deviceName", "Sibi");
+//		ds.setCapability("udid", "lfzhn7rwk7irbqbe");
 //		ds.setCapability("platformName", "ANDROID");
-//		ds.setCapability("deviceName", "SibiEmulator");	
+//		ds.setCapability("platformVersion", "14.0.5");
+		
+			
 //		service= new AppiumServiceBuilder()
 //				.usingDriverExecutable(new File(NodeExe_Path))
 //				.withAppiumJS(new File(NodeJSPath))
@@ -48,10 +51,12 @@ public class AppiumBaseTest {
 //		service.start();
 		
 		UiAutomator2Options options = new UiAutomator2Options();
-		options.setDeviceName("SibiEmulator");
+		options.setDeviceName("Sibi");
+		options.setUdid("lfzhn7rwk7irbqbe");
 		options.setApp("/Users/vc/Downloads/resources/ApiDemos-debug.apk");
 		
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(80));
+		Thread.sleep(10000);
 	}
 }

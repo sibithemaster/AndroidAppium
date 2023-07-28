@@ -10,6 +10,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
+import com.beust.ah.A;
+
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
@@ -20,7 +22,7 @@ import io.appium.java_client.service.local.flags.GeneralServerFlag;
 public class AppiumBasics extends AppiumBaseTest{ 
 			
 	@Test
-	public void appiumTest() throws MalformedURLException
+	public void appiumTest() throws MalformedURLException, InterruptedException
 	{	
 		//acting as a bridge between mobile avd and server
 			
@@ -38,7 +40,10 @@ public class AppiumBasics extends AppiumBaseTest{
 		
 		driver.findElement(By.id("android:id/button1")).click();
 		
-		
+        driver.quit();
+//		driver.findElement(AppiumBy.accessibilityId("Phone")).click();
+//		driver.findElement(AppiumBy.accessibilityId("key pad")).click();
+//		driver.findElement(By.xpath("com.google.android.dialer:id/digits")).sendKeys("9009009009");
 //		driver.findElement(By.id("")).click();
 		
 	
