@@ -5,18 +5,18 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
-import io.appium.java_client.AppiumBy;
+import com.google.common.collect.ImmutableMap;
+
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.options.UiAutomator2Options;
-import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
-import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
 public class AppiumBaseClass {
 
@@ -28,14 +28,19 @@ public class AppiumBaseClass {
 	public void configurationForAppium() throws MalformedURLException, InterruptedException
 	{
         DesiredCapabilities caps = new DesiredCapabilities();	
+        //android device name
 		caps.setCapability("deviceName", "SibiEmulator");
 		caps.setCapability("newCommandTimeout", 100000);
+		//which platform 
 		caps.setCapability("platformName", "ANDROID");
+		//platform version of current device or emulator
 		caps.setCapability("platformVersion", "14");
 		//real device unique id
         //caps.setCapability("udid", "lfzhn7rwk7irbqbe");
 		caps.setCapability("app", "/Users/vc/Downloads/resources/ApiDemos-debug.apk");
+		//if app is already installed no need to reinstall
 		caps.setCapability("noReset", true);
+		//automation driver name for android 
 		caps.setCapability("automationName", "UIAutomator2");
 			
 		//to start the server automatically useful for Jenkins integration
@@ -49,10 +54,33 @@ public class AppiumBaseClass {
 		//connecting the server with mobile
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), caps);
 		//implicit wait for whole class
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(80));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		//It is only for real device
         //Thread.sleep(10000);
 	}
+    
+    
+    //appium github gestures for many more
+    //appium gestures methods starts
+    public void longpress(WebElement element)
+    {
+		
+		//JavascriptExecutor 
+		((JavascriptExecutor) driver).executeScript("mobile: longClickGesture",
+				ImmutableMap.of("elementId",((RemoteWebElement) element).getId(),"duration",2000));
+	
+    }
+    
+    //scrolling using UIAutomator
+    public void scrollUsingUIAutomator()
+    {
+    	
+    }
+    //Scroll using gestures
+    public void scroll()
+    {
+    	
+    }
 	
 	@AfterClass
 	public void tearDown()

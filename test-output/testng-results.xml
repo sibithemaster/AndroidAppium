@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-06T11:29:45 IST" name="Default suite" finished-at="2023-08-06T11:30:23 IST" duration-ms="37374">
+  <suite started-at="2023-08-06T22:23:02 IST" name="Default suite" finished-at="2023-08-06T22:24:04 IST" duration-ms="62207">
     <groups>
     </groups>
-    <test started-at="2023-08-06T11:29:45 IST" name="Default test" finished-at="2023-08-06T11:30:23 IST" duration-ms="37374">
-      <class name="com.appium.AppiumBasics">
-        <test-method is-config="true" signature="configurationForAppium()[pri:0, instance:com.appium.AppiumBasics@6ae5aa72]" started-at="2023-08-06T11:29:45 IST" name="configurationForAppium" finished-at="2023-08-06T11:29:58 IST" duration-ms="12429" status="PASS">
+    <test started-at="2023-08-06T22:23:02 IST" name="Default test" finished-at="2023-08-06T22:24:04 IST" duration-ms="62207">
+      <class name="com.appium.MobileGesturesInAndroid">
+        <test-method is-config="true" signature="configurationForAppium()[pri:0, instance:com.appium.MobileGesturesInAndroid@35cabb2a]" started-at="2023-08-06T22:23:02 IST" name="configurationForAppium" finished-at="2023-08-06T22:23:13 IST" duration-ms="11209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configurationForAppium -->
-        <test-method signature="appiumTest()[pri:0, instance:com.appium.AppiumBasics@6ae5aa72]" started-at="2023-08-06T11:29:58 IST" name="appiumTest" finished-at="2023-08-06T11:30:21 IST" duration-ms="23874" status="PASS">
+        <test-method signature="scrolling()[pri:1, instance:com.appium.MobileGesturesInAndroid@35cabb2a]" started-at="2023-08-06T22:23:13 IST" name="scrolling" finished-at="2023-08-06T22:23:36 IST" duration-ms="23481" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- appiumTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.appium.AppiumBasics@6ae5aa72]" started-at="2023-08-06T11:30:21 IST" name="tearDown" finished-at="2023-08-06T11:30:23 IST" duration-ms="1044" status="PASS">
+        </test-method> <!-- scrolling -->
+        <test-method signature="longpressGesture()[pri:2, instance:com.appium.MobileGesturesInAndroid@35cabb2a]" started-at="2023-08-06T22:23:36 IST" name="longpressGesture" finished-at="2023-08-06T22:24:03 IST" duration-ms="26585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- longpressGesture -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.appium.MobileGesturesInAndroid@35cabb2a]" started-at="2023-08-06T22:24:03 IST" name="tearDown" finished-at="2023-08-06T22:24:04 IST" duration-ms="891" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.appium.AppiumBasics -->
+      </class> <!-- com.appium.MobileGesturesInAndroid -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

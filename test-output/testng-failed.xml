@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.action.Calculator">
+      <class name="com.appium.MobileGesturesInAndroid">
         <methods>
-          <include name="testingCalculator"/>
+          <include name="configurationForAppium"/>
+          <include name="scrolling"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.action.Calculator -->
+      </class> <!-- com.appium.MobileGesturesInAndroid -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
