@@ -11,7 +11,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
 import com.google.common.collect.ImmutableMap;
 
@@ -108,6 +107,13 @@ public class BaseClass {
 				));
 	}
 	
+	
+	public double getRemovalOfCurrency(String amount) {
+		
+		Double price=Double.parseDouble(amount.substring(1));
+		return price;
+		
+	}
 	@AfterClass
 	public void tearDown()
 	{
