@@ -1,25 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-08T12:18:28 IST" name="Default suite" finished-at="2023-08-08T12:19:48 IST" duration-ms="79671">
+  <suite started-at="2023-08-08T23:24:38 IST" name="Default suite" finished-at="2023-08-08T23:24:39 IST" duration-ms="644">
     <groups>
     </groups>
-    <test started-at="2023-08-08T12:18:28 IST" name="Default test" finished-at="2023-08-08T12:19:48 IST" duration-ms="79671">
-      <class name="com.generalstore.TestCaseFormFilling">
-        <test-method is-config="true" signature="configurationForGeneralStore()[pri:0, instance:com.generalstore.TestCaseFormFilling@7e07db1f]" started-at="2023-08-08T12:18:28 IST" name="configurationForGeneralStore" finished-at="2023-08-08T12:18:43 IST" duration-ms="14979" status="PASS">
+    <test started-at="2023-08-08T23:24:38 IST" name="Default test" finished-at="2023-08-08T23:24:39 IST" duration-ms="644">
+      <class name="com.mobilebrowser.MobileBrowserTestClass">
+        <test-method is-config="true" signature="configurationForGeneralStore()[pri:0, instance:com.mobilebrowser.MobileBrowserTestClass@5c5eefef]" started-at="2023-08-08T23:24:38 IST" name="configurationForGeneralStore" finished-at="2023-08-08T23:24:39 IST" duration-ms="613" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: New app path '/Users/vc/Downloads/chromedriver_mac64/chromedriver' did not have extensions: .apk,.apks 
+Host info: host: 'VCs-MacBook-Pro.local', ip: '2405:201:e011:8100:5c70:7751:608e:49e4%en0'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '17.0.7'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=/Users/vc/Downloads/chromedriver_mac64/chromedriver, appium:automationName=UIAutomator2, appium:connectHardwareKeyboard=true, appium:deviceName=SibiEmulator, appium:ensureWebviewsHavePages=true, appium:nativeWebScreenshot=true, appium:newCommandTimeout=3600, browserName=Chrome, platformName=ANDROID}], desiredCapabilities=Capabilities {appium:app: /Users/vc/Downloads/chromed..., appium:automationName: UIAutomator2, appium:connectHardwareKeyboard: true, appium:deviceName: SibiEmulator, appium:ensureWebviewsHavePages: true, appium:nativeWebScreenshot: true, appium:newCommandTimeout: 3600, browserName: Chrome, platformName: ANDROID}}]
+Capabilities {appium:app: /Users/vc/Downloads/chromed..., appium:automationName: UIAutomator2, appium:connectHardwareKeyboard: true, appium:deviceName: SibiEmulator, appium:ensureWebviewsHavePages: true, appium:nativeWebScreenshot: true, appium:newCommandTimeout: 3600, browserName: Chrome, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: New app path '/Users/vc/Downloads/chromedriver_mac64/chromedriver' did not have extensions: .apk,.apks 
+Host info: host: 'VCs-MacBook-Pro.local', ip: '2405:201:e011:8100:5c70:7751:608e:49e4%en0'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '17.0.7'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=/Users/vc/Downloads/chromedriver_mac64/chromedriver, appium:automationName=UIAutomator2, appium:connectHardwareKeyboard=true, appium:deviceName=SibiEmulator, appium:ensureWebviewsHavePages=true, appium:nativeWebScreenshot=true, appium:newCommandTimeout=3600, browserName=Chrome, platformName=ANDROID}], desiredCapabilities=Capabilities {appium:app: /Users/vc/Downloads/chromed..., appium:automationName: UIAutomator2, appium:connectHardwareKeyboard: true, appium:deviceName: SibiEmulator, appium:ensureWebviewsHavePages: true, appium:nativeWebScreenshot: true, appium:newCommandTimeout: 3600, browserName: Chrome, platformName: ANDROID}}]
+Capabilities {appium:app: /Users/vc/Downloads/chromed..., appium:automationName: UIAutomator2, appium:connectHardwareKeyboard: true, appium:deviceName: SibiEmulator, appium:ensureWebviewsHavePages: true, appium:nativeWebScreenshot: true, appium:newCommandTimeout: 3600, browserName: Chrome, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at com.mobilebrowser.MobileBrowserBaseClass.configurationForGeneralStore(MobileBrowserBaseClass.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configurationForGeneralStore -->
-        <test-method signature="testingFormGeneralStore()[pri:0, instance:com.generalstore.TestCaseFormFilling@7e07db1f]" started-at="2023-08-08T12:18:43 IST" name="testingFormGeneralStore" finished-at="2023-08-08T12:19:46 IST" duration-ms="63538" status="PASS">
+        <test-method signature="browserTest()[pri:0, instance:com.mobilebrowser.MobileBrowserTestClass@5c5eefef]" started-at="2023-08-08T23:24:39 IST" name="browserTest" finished-at="2023-08-08T23:24:39 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: New app path '/Users/vc/Downloads/chromedriver_mac64/chromedriver' did not have extensions: .apk,.apks 
+Host info: host: 'VCs-MacBook-Pro.local', ip: '2405:201:e011:8100:5c70:7751:608e:49e4%en0'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '17.0.7'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=/Users/vc/Downloads/chromedriver_mac64/chromedriver, appium:automationName=UIAutomator2, appium:connectHardwareKeyboard=true, appium:deviceName=SibiEmulator, appium:ensureWebviewsHavePages=true, appium:nativeWebScreenshot=true, appium:newCommandTimeout=3600, browserName=Chrome, platformName=ANDROID}], desiredCapabilities=Capabilities {appium:app: /Users/vc/Downloads/chromed..., appium:automationName: UIAutomator2, appium:connectHardwareKeyboard: true, appium:deviceName: SibiEmulator, appium:ensureWebviewsHavePages: true, appium:nativeWebScreenshot: true, appium:newCommandTimeout: 3600, browserName: Chrome, platformName: ANDROID}}]
+Capabilities {appium:app: /Users/vc/Downloads/chromed..., appium:automationName: UIAutomator2, appium:connectHardwareKeyboard: true, appium:deviceName: SibiEmulator, appium:ensureWebviewsHavePages: true, appium:nativeWebScreenshot: true, appium:newCommandTimeout: 3600, browserName: Chrome, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: New app path '/Users/vc/Downloads/chromedriver_mac64/chromedriver' did not have extensions: .apk,.apks 
+Host info: host: 'VCs-MacBook-Pro.local', ip: '2405:201:e011:8100:5c70:7751:608e:49e4%en0'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '17.0.7'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=/Users/vc/Downloads/chromedriver_mac64/chromedriver, appium:automationName=UIAutomator2, appium:connectHardwareKeyboard=true, appium:deviceName=SibiEmulator, appium:ensureWebviewsHavePages=true, appium:nativeWebScreenshot=true, appium:newCommandTimeout=3600, browserName=Chrome, platformName=ANDROID}], desiredCapabilities=Capabilities {appium:app: /Users/vc/Downloads/chromed..., appium:automationName: UIAutomator2, appium:connectHardwareKeyboard: true, appium:deviceName: SibiEmulator, appium:ensureWebviewsHavePages: true, appium:nativeWebScreenshot: true, appium:newCommandTimeout: 3600, browserName: Chrome, platformName: ANDROID}}]
+Capabilities {appium:app: /Users/vc/Downloads/chromed..., appium:automationName: UIAutomator2, appium:connectHardwareKeyboard: true, appium:deviceName: SibiEmulator, appium:ensureWebviewsHavePages: true, appium:nativeWebScreenshot: true, appium:newCommandTimeout: 3600, browserName: Chrome, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at com.mobilebrowser.MobileBrowserBaseClass.configurationForGeneralStore(MobileBrowserBaseClass.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testingFormGeneralStore -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.generalstore.TestCaseFormFilling@7e07db1f]" started-at="2023-08-08T12:19:46 IST" name="tearDown" finished-at="2023-08-08T12:19:48 IST" duration-ms="1129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.generalstore.TestCaseFormFilling -->
+        </test-method> <!-- browserTest -->
+      </class> <!-- com.mobilebrowser.MobileBrowserTestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
