@@ -1,7 +1,42 @@
 Appium Setup
 
+Android Studio - tool used for emulator 
+Appium Server
+Appium Inspector
+UIAutomatorViewer
+
+
+
 First install android studio for starting your emulator
 
 or
 
 you can connect your real device using QRCode or pass code using pair with WiFi
+
+Start the server using appium server
+
+Start Appium Inspector for inspecting the element
+
+Appium drivers
+
+uiautomator2@1.75.0 
+xcuitest@4.32.22 
+mac2 
+espresso 
+safari 
+gecko 
+chromium 
+
+
+emulator 
+real device - samsung a53
+
+
+adb commands
+
+adb shell dumpsys window | grep -E 'mCurrentFocus' for mac
+adb shell dumpsys window | find 'mCurrentFocus'  for windows
+
+adb install path of the application
+
+
