@@ -1,0 +1,12 @@
+[
+    {"country":"Argentina",
+     "name":   "Messi",
+      "gender":  "male"
+        
+    },
+    {"country":"Argentina",
+     "name":   "Sam",
+      "gender":  "female"
+        
+    }
+]
