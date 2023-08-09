@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mobilebrowser.MobileBrowserTestClass">
+      <class name="com.generalstore.ParallelTestsing">
         <methods>
-          <include name="browserTest"/>
           <include name="configurationForGeneralStore"/>
+          <include name="testingFormGeneralStore"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.mobilebrowser.MobileBrowserTestClass -->
+      </class> <!-- com.generalstore.ParallelTestsing -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
