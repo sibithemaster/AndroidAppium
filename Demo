@@ -1,0 +1,217 @@
+/Users/vc/Library/Android/sdk
+
+Node.js v18.16.1 to /usr/local/bin/node
+npm v9.5.1 to /usr/local/bin/npm
+
+{/usr/libexec/java_home}
+
+
+
+Steps for setting up IOS mobile testing
+
+1.Xcode download
+To open IPA files in simulator we need 
+WebdriverAgent
+Integration app
+In simulator we can choose only the model of
+iPhone version
+In Emulator we can change the ram and storage.
+2.Appium server should run after initiating the simulator
+3.Appium inspector 
+    For inspecting elements in simulator
+
+For real device setup some things should present
+Appium code before connecting Real Device iPhone
+
+
+Mobile QA
+
+XPath for iOS and android
+
+Touch actions
+
+How to install UIAutomator
+
+Failed test cases
+
+Webdriveragent - what and how it works
+
+WhatsApp 5 negative test case
+
+Appium 1.22 vs 2.23 difference
+
+Project General Store(TILL NIGHT)
+
+Project with MAVEN and TESTNG(08)
+
+Tell about your self  and roles in your project
+Hai I am Sibisubramanian 
+I am currently working for Market Simplified India limited 
+I have three plus years of experience in Software testing 
+I have worked on both manual and Automation testing  
+I worked on three projects my first project name is home choice it is 
+e-commerce based domain and in this I worked as manual tester 
+where I performed testing likes Smoke, Sanity and Regression 
+My second project is Epic it is insurance 
+based domain and in this I worked as automation tester 
+Where I used technologies like testing, 
+Cucumber, selenium , java and version control for code management. 
+My third project is NatGen it is insurance based domain 
+and in this I worked as mobile  tester 
+I worked on technologies like java , selenium, 
+TestNG, Cucumber, Appium, JIRA for bug tracking, 
+Postman for api testing and maven for build management, 
+Git for code management
+
+
+RESPONSIBILITIES 
+
+Checking the mails 
+For ticket assigned or not need to be checked on JIRA dashboard
+First of all I need to know the workflow of application
+For example which module the application should start and where should it end
+I collaborate with  my developing team for this information
+I need to manage documents for the test cases
+Commit and push the code to repository before ending the day
+Pull the code before starting the work
+I need to work on manual testing in some project along with my existing project
+Helping my juniors regarding KT for the project
+
+
+
+Rest API Days Schedule
+Day one - post man for manual testing
+
+http methods
+GET —> Display the page
+POST —> Like form submitting 
+PUT —> updating
+
+If the client sends data with an identifier, then we will check whether that identifier exists. If the identifier exists, we will update the resource with the data, else we will create a resource with the data and assign/generate a new identifier.
+
+PATCH —> It is also for updating
+If the client sends data with an identifier, then we will check whether that identifier exists. 
+If the identifier exists, we will update the resource with the data, else we will throw an exception.
+Note: On the PUT method, we are not throwing an exception if an identifier is not found. 
+But in the PATCH method, we are throwing an exception if the identifier is not found.
+
+
+DELETE —> Delete the value
+Delete any values from a table or delete the products which you added (Amazon)
+
+
+Authentication
+Authentication is a process to prove that you are the person you intend to be.
+Login in email with username and password
+
+Authorization
+Authorization is the process of giving access to someone. 
+If you are Authorized then you have access to that resource. 
+Now to Authorize you to need to present credentials and as we discussed earlier that process is called Authentication. 
+Hence Authorization and Authentication are closely related terms and often used interchangeably.
+
+To view the contents of yours for example sharing Netflix accounts to watch series.
+
+DAY TWO -REST ASSURED SETUP
+With java using maven project
+Finish before you go for sleep
+NOT YET DONE TO BE FINISHED WITH THIRD DAY
+
+
+In java
+Class - it is a collection of methods and data members
+Object - it is a super most class in java for non-static methods
+We will create objects.
+
+JDK - for developing 
+JRE - runtime environment 
+JVM - virtual machine
+
+Oops concept
+Class and object
+
+Inheritance
+Deriving one class properties from another class
+
+Polymorphism
+An object showing different behaviour in different stages of life is called as polymorphism.
+Two types of polymorphism
+Static,Dynamic
+
+Static - method overloading
+Same class
+Method same
+Argument differ
+
+Dynamic - method overriding
+Class name differ
+Method same 
+Argument same
+
+
+Encapsulation
+Binding of data together into a single entity is called as encapsulation.
+Example pojo class 
+Where we have getters and setters
+
+Abstraction(Abstract class and Interface)
+Partial and fully abstraction
+Abstract class contains abstract methods and non-abstract methods
+Interface contains only non-abstract methods
+We cannot create object for both
+
+
+Exceptions 
+Unwanted error which disturbs the normal flow of code.
+Two types
+Checked ———>IOException,SQLException,FileNotFound,ClassNotFound
+Unchecked——>Arithmetic,nullpointer,inputmismatch,arrayindexoutofbound,StringIndexOutOfbound
+
+Try
+Catch
+Throw 
+throws
+Finally
+
+Array
+Collection of similar data type, fixed in size,Starts from zeroth index ends with n-1
+Array performance is faster
+
+Collections
+To overcome array ,dynamic memory allocation, 
+no memory wastage, It is slower compare with array in performance
+
+
+Collection - interface
+List—>ArrayList,LinkedList,Vector
+Set—>Hashset,LinkedHashset,TreeSet
+Hashset - random order,
+LinkedHashset - insertion order,
+TreeSet - ascending order 
+Map—>Hashmap,LinkedHashMap,TreeMap,HashTable,ConcurrentMap
+HashMap - random order,
+LinkedHashMap - insertion order,
+TreeMap - ascending order
+
+
+Selenium
+
+Selenium is used for web automation
+Selenium current version 4.10
+Selenium WebDriverAgent only used
+
+
+Selenium locators
+ID,
+name,
+xpath,
+cssselector,
+classname,
+linktext,
+partiallinktext,
+tagname
+
+
+
+
+Testing
